@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- suneditor css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Admirers</title>
+  </head>
+  <body>
+    <header>
+        <nav class="mkd-navbar">
+            <ul class="mkd-navbar-nav">
+                <div class="toggleBar" role="button"  data-toggle="modal" data-target="#sideModal">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <li><a href="" class="nav-link"><i class="fas fa-search"></i></a></li>
+                <li><a href="messages.html" class="nav-link nav-icon-top"><i class="far fa-comments"></i><i class="fas fa-circle status-dot"></i></a></li>
+                <li><a href="" class="nav-link nav-icon-top"><i class="far fa-heart"></i><i class="fas fa-circle status-dot"></i></a></li>
+                <li><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sidenav popup -->
+    <div
+      class="modal sideModal fade"
+      id="sideModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <section id="sidenav">
+              <div class="sidenav-content">
+                <div class="row margin-escape">
+                  <span
+                    class="left-side cross"
+                    role="button"
+                    data-dismiss="modal"
+                    >&times;</span
+                  >
+                </div>
+                <div class="row margin-escape mb-2">
+                  <div class="user-area d-flex justify-content-between">
+                    <div class="user-profile d-flex align-items-center">
+                      <a href=""><i class="far fa-user-circle"></i></a>
+                      <div class="user-info">
+                        <p>Uji Menakaya</p>
+                        <small>Logos, Nigeria</small>
+                      </div>
+                    </div>
+                    <a href="" class="edit-btn"><i class="fas fa-edit"></i></a>
+                  </div>
+                </div>
+                <div class="sidenav-content-wrapper">
+                  <a href="" class="view-prof-btn">View Profile</a>
+                  <div class="profile-com">
+                    <h3 class="complete-perc">
+                      <span> Profile completion:</span> 90%
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="sidenav-menu">
+                    <li>
+                      <a href=""><i class="fas fa-search"></i>Search</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-envelope"></i>Messages</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i>Matches</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-user"></i>Profile</a>
+                    </li>
+                  </div>
+
+                  <div class="logo">
+                    <img
+                      src="./assets/images/logo.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="setting-logout">
+                    <a href="">Setting</a>
+                    <a href="">Logout</a>
+                  </div>
+
+                  <div class="sidenav-menu-bottom">
+                    <a href="">safety</a>
+                    <a href="">reports</a>
+                    <a href="">terms</a>
+                    <a href="">privacy</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mkd-message-container p-2">
+      <div class="mkd-row">
+        <div class="new-online message-admir">
+          <a href="" class="new">Admirers</a>
+          <a href="message_favourite.html" class="new msg-adm-fav"
+            >Favourite
+          </a>
+        </div>
+      </div>
+
+      <div class="chats-area">
+        <div class="mkd-search-row">
+          <div class="chat-search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Name Search" />
+          </div>
+        </div>
+        <div class="chat-messages-area">
+          <div class="message-row msg-admir-row">
+            <a href="" class="message-user-icon"
+              ><i class="fas fa-user-circle"></i
+            ></a>
+            <div class="message-row-user">
+              <h5>Jennifer</h5>
+              <small>Logos,Nigeria</small>
+            </div>
+            <span class="last-seen-badge online">Online</span>
+            <input type="checkbox" class="heart-fav-icon" />
+            <a href="" class="admr-msg-icon"><i class="far fa-comments"></i></a>
+            <a href="#" class="option-icon"
+              ><i class="fas fa-ellipsis-v"></i
+            ></a>
+            <div class="report">
+              <a href="">1.Block</a>
+              <a href="">2.Report</a>
+            </div>
+          </div>
+
+          <div class="message-row msg-admir-row">
+            <a href="" class="message-user-icon"
+              ><i class="fas fa-user-circle"></i
+            ></a>
+            <div class="message-row-user">
+              <h5>Uju</h5>
+              <small>Logos,Nigeria</small>
+            </div>
+            <span class="last-seen-badge">Today</span>
+            <input type="checkbox" class="heart-fav-icon" />
+            <a href="" class="admr-msg-icon"><i class="far fa-comments"></i></a>
+            <a href="#" class="option-icon"
+              ><i class="fas fa-ellipsis-v"></i
+            ></a>
+            <div class="report">
+              <a href="">1.Block</a>
+              <a href="">2.Report</a>
+            </div>
+          </div>
+
+          <div class="message-row msg-admir-row">
+            <a href="" class="message-user-icon"
+              ><i class="fas fa-user-circle"></i
+            ></a>
+            <div class="message-row-user">
+              <h5>Kasarachi</h5>
+              <small>Logos,Nigeria</small>
+            </div>
+            <span class="last-seen-badge">1 week</span>
+            <input type="checkbox" class="heart-fav-icon" />
+            <a href="" class="admr-msg-icon"><i class="far fa-comments"></i></a>
+            <a href="#" class="option-icon"
+              ><i class="fas fa-ellipsis-v"></i
+            ></a>
+            <div class="report">
+              <a href="">1.Block</a>
+              <a href="">2.Report</a>
+            </div>
+          </div>
+
+          <div class="message-row msg-admir-row">
+            <a href="" class="message-user-icon"
+              ><i class="fas fa-user-circle"></i
+            ></a>
+            <div class="message-row-user">
+              <h5>Rebecca</h5>
+              <small>Logos,Nigeria</small>
+            </div>
+            <span class="last-seen-badge">2 months</span>
+            <input type="checkbox" class="heart-fav-icon" />
+            <a href="" class="admr-msg-icon"><i class="far fa-comments"></i></a>
+            <a href="#" class="option-icon"
+              ><i class="fas fa-ellipsis-v"></i
+            ></a>
+            <div class="report">
+              <a href="">1.Block</a>
+              <a href="">2.Report</a>
+            </div>
+          </div>
+
+          <div class="message-row msg-admir-row">
+            <a href="" class="message-user-icon"
+              ><i class="fas fa-user-circle"></i
+            ></a>
+            <div class="message-row-user">
+              <h5>Janet</h5>
+              <small>Logos,Nigeria</small>
+            </div>
+            <span class="last-seen-badge">2 months</span>
+            <input type="checkbox" class="heart-fav-icon" />
+            <a href="" class="admr-msg-icon"><i class="far fa-comments"></i></a>
+            <a href="#" class="option-icon"
+              ><i class="fas fa-ellipsis-v"></i
+            ></a>
+            <div class="report">
+              <a href="">1.Block</a>
+              <a href="">2.Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- suneditor js -->
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+    <!-- languages (Basic Language: English/en) -->
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ko.js"></script>
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

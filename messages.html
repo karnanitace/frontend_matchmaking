@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     
+     <!-- suneditor css -->
+     <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Messages</title>
+</head>
+<body>
+    <header>
+        <nav class="mkd-navbar">
+            <ul class="mkd-navbar-nav">
+                <div class="toggleBar" role="button"  data-toggle="modal" data-target="#sideModal">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <li><a href="" class="nav-link"><i class="fas fa-search"></i></a></li>
+                <li><a href="" class="nav-link nav-icon-top"><i class="far fa-comments"></i><i class="fas fa-circle status-dot"></i></a></li>
+                <li><a href="" class="nav-link nav-icon-top"><i class="far fa-heart"></i><i class="fas fa-circle status-dot"></i></a></li>
+                <li><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sidenav popup -->
+   
+
+
+        <!-- Modal -->
+<div class="modal sideModal fade" id="sideModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <section id="sidenav">
+                <div class="sidenav-content">
+                    <div class="row margin-escape">
+                        <span class="left-side cross" role="button" data-dismiss="modal">&times;</span>
+                    </div>
+                    <div class="row margin-escape mb-2">
+                        <div class="user-area d-flex justify-content-between">
+                            <div class="user-profile d-flex align-items-center">
+                                <a href=""><i class="far fa-user-circle"></i></a>
+                                <div class="user-info">
+                                    <p>Uji Menakaya</p>
+                                    <small>Logos, Nigeria</small>
+                                </div>
+                            </div>
+                            <a href="" class="edit-btn"><i class="fas fa-edit"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="sidenav-content-wrapper">
+                      <a href="" class="view-prof-btn">View Profile</a>
+                      <div class="profile-com">
+                            <h3 class="complete-perc"><span> Profile completion:</span> 90%</h3>
+                            <div class="progress">
+                                <div class="progress-bar">
+                                
+                                </div>
+                            </div>
+                       </div>
+    
+                       <div class="sidenav-menu">
+                     
+                               <li><a href=""><i class="fas fa-search"></i>Search</a></li>
+                               <li><a href=""><i class="fas fa-envelope"></i>Messages</a></li>
+                               <li><a href=""><i class="fas fa-heart"></i>Matches</a></li>
+                               <li><a href=""><i class="fas fa-user"></i>Profile</a></li>
+                        
+                       </div>
+    
+                       <div class="logo">
+                           <img src="./assets/images/logo.png" class="img-fluid" alt="">
+                       </div>
+    
+                       <div class="setting-logout">
+                           <a href="">Setting</a>
+                           <a href="">Logout</a>
+                       </div>
+    
+                       <div class="sidenav-menu-bottom">
+                          <a href="">safety</a>
+                          <a href="">reports</a>
+                          <a href="">terms</a>
+                          <a href="">privacy</a>
+                       </div>
+                    
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="mkd-message-container p-2">
+        <div class="mkd-row">
+            <div class="new-online">
+                <a href="" class="new"><i class="fas fa-bell"></i>Inbox</a>
+                <a href="" class="new">Sent </a>
+            </div>
+        </div>
+
+        <div class="chats-area">
+            <div class="mkd-search-row">
+                <div class="chat-search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Name Search">
+                </div> 
+            </div>
+            <div class="chat-messages-area">
+                <div class="message-row msg-report">
+                    <a href="" class="message-user-icon"><i class="fas fa-user-circle"></i></a>
+                    <div class="message-row-user" data-toggle="modal" data-target="#messageModal">
+                        <h5>Jennifer</h5>
+                        <small>Logos,Nigeria</small>
+                    </div>
+                    <span class="last-seen-badge">Today</span>
+                    <a href="#" class="option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                    <div class="report">
+                        <a href="">1.Block</a>
+
+                    </div>
+                    <p class="last-msg">10:52 pm</p>
+                </div>
+
+                <div class="message-row msg-report">
+                    <a href="" class="message-user-icon"><i class="fas fa-user-circle"></i></a>
+                    <div class="message-row-user" data-toggle="modal" data-target="#messageModal">
+                        <h5>Uju</h5>
+                        <small>Logos,Nigeria</small>
+                    </div>
+                    <span class="last-seen-badge">Today</span>
+                    <a href="#" class="option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                    <div class="report">
+                        <a href="">1.Block</a>
+
+                    </div>
+                    <p class="last-msg">9:31 pm</p>
+                </div>
+                
+                <div class="message-row msg-report">
+                    <a href="" class="message-user-icon"><i class="fas fa-user-circle"></i></a>
+                    <div class="message-row-user" data-toggle="modal" data-target="#messageModal">
+                        <h5>Ifeoma</h5>
+                        <small>Logos,Nigeria</small>
+                    </div>
+                    <span class="last-seen-badge">Today</span>
+                    <a href="#" class="option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                    <div class="report">
+                        <a href="">1.Block</a>
+                        
+                    </div>
+                    <p class="last-msg">2 days</p>
+                </div>
+
+                <div class="message-row msg-report">
+                    <a href="" class="message-user-icon"><i class="fas fa-user-circle"></i></a>
+                    <div class="message-row-user" data-toggle="modal" data-target="#messageModal">
+                        <h5>Kasarachi</h5>
+                        <small>Logos,Nigeria</small>
+                    </div>
+                    <span class="last-seen-badge">Today</span>
+                    <a href="#" class="option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                    <div class="report">
+                        <a href="">1.Block</a>
+
+                    </div>
+                    <p class="last-msg">1 week</p>
+                </div>
+
+                <div class="message-row msg-report">
+                    <a href="" class="message-user-icon"><i class="fas fa-user-circle"></i></a>
+                    <div class="message-row-user" data-toggle="modal" data-target="#messageModal">
+                        <h5>Rebecca</h5>
+                        <small>Logos,Nigeria</small>
+                    </div>
+                    <span class="last-seen-badge">Today</span>
+                    <a href="#" class="option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                    <div class="report">
+                        <a href="">1.Block</a>
+                        
+                    </div>
+                    <p class="last-msg">2 months</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- message  -->
+    <section class="bottom-nav">
+        <!-- Modal -->
+        <div class="modal bottom fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                <a href="#!" class="close-modal" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></a>
+                <div class="user-profile user-msg d-flex align-items-center">
+                    <a href="" class="user-pvt-icon"><i class="far fa-user-circle"></i></a>
+                    <div class="user-info">
+                        <p>Uju Menakaya</p>
+                        <small>Logos, Nigeria</small> <br>
+                        <span class="age">24</span>
+                        
+                    </div>
+                    <div class="heart-option-icon">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href="#" class="option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                        <div class="report report1">
+                            <a href="">1.Block</a>
+                        </div>
+                    </div>
+                   
+                    
+                    
+                </div>
+                <a href="" class="view-prof-btn">View Profile</a>
+                <div class="msg-chat-area">
+                    <div class="msg-chat">
+                        <a href="" class="chat-img"><i class="fas fa-user-circle"></i></a>
+                        <div class="msg-chat-body">
+                            <div class="msg-chat-usermsg">
+                                <p class="msg-chat-username">Mutliin</p>
+                                <a href="#" class="option-icon-chat option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="report">
+                                    <a href="#" class="report-msg-btn" data-toggle="modal" data-target="#reportMsgModal">Report this <br> comment</a>
+                                </div>
+                                <p class="msg-chat-msg">Second Line of text</p>
+                            </div>
+                            <div class="msg-chat-usermsg">
+                                <p class="msg-chat-username">Mutliin</p>
+                                <a href="#" class="option-icon-chat option-icon"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="report">
+                                    <a href="#" class="report-msg-btn" data-toggle="modal" data-target="#reportMsgModal">Report this <br> comment</a>
+                                </div>
+                                <p class="msg-chat-msg">Second Line of text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg-chat msg-chat-reverse">
+                        
+                        <div class="msg-chat-body">
+                            <div class="msg-chat-usermsg">
+                                <p class="msg-chat-username">Mutliin </p> 
+                                <p class="msg-chat-msg">Second Line of text</p>
+                                
+                            </div>
+                            <div class="msg-chat-usermsg">
+                                <p class="msg-chat-username">Mutliin</p>
+                                <p class="msg-chat-msg">Second Line of text</p>
+                            </div>
+                        </div>
+                        <a href="" class="chat-img-rev"><i class="fas fa-user-circle"></i></a>
+                    </div>
+                </div>
+                <div class="input-msg-area">
+                    <div class="msg-editor">
+                        <textarea id="sample" cols="30" rows="3"></textarea>
+                    </div>
+                    
+                    <button class="msg-send-btn"><i class="far fa-paper-plane"></i></button>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <div class="modal report-bottom fade" id="reportMsgModal"  data-backdrop="static" role="dialog" aria-labelledby="reportMsgModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <div id="report-msg">
+                    <div class="report-wrapper">
+                        <div class="report-user-info">
+                            <span class="report-head">
+                                report :
+                            </span>
+                            <div class="report-user">
+                                <p class="report-username">
+                                    Uju
+                                </p>
+                                <p class="report-region">
+                                    Lagos, Nigeria
+                                </p>
+                            </div>
+                            <a href="" class="report-view-prof">View Profile</a>
+                            <a href="" class="report-close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="report-info">
+                            <p>Confirm your report of the User.</p>
+                            <p>Note that punitive actions against this User will be an en</p>
+                            <p>Any Other Reason:</p>
+                            <input type="text" placeholder="Enter Your reason here" id="report-com">
+                            <a href="" class="btn report-btn">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+     <!-- Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+     <!-- suneditor js -->
+     <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+<!-- languages (Basic Language: English/en) -->
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ko.js"></script>
+     <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

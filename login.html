@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+     <!-- suneditor css -->
+     <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+        <nav class="mkd-navbar">
+            <ul class="mkd-navbar-nav">
+                <div class="toggleBar" role="button"  data-toggle="modal" data-target="#sideModal">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <li><a href="" class="nav-link"><i class="fas fa-search"></i></a></li>
+                <li><a href="messages.html" class="nav-link"><i class="far fa-comments"></i></a></li>
+                <li><a href="" class="nav-link"><i class="far fa-heart"></i></a></li>
+                <li><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sidenav popup -->
+
+    <!-- Modal -->
+    <div
+      class="modal sideModal fade"
+      id="sideModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <section id="sidenav">
+              <div class="sidenav-content">
+                <div class="row margin-escape">
+                  <span
+                    class="left-side cross"
+                    role="button"
+                    data-dismiss="modal"
+                    >&times;</span
+                  >
+                </div>
+                <div class="row margin-escape mb-2">
+                  <div class="user-area d-flex justify-content-between">
+                    <div class="user-profile d-flex align-items-center">
+                      <a href=""><i class="far fa-user-circle"></i></a>
+                      <div class="user-info">
+                        <p>Uji Menakaya</p>
+                        <small>Logos, Nigeria</small>
+                      </div>
+                    </div>
+                    <div class="sidenav-content-wrapper">
+                      <a href="" class="view-prof-btn">View Profile</a>
+                      <div class="profile-com">
+                            <h3 class="complete-perc"><span> Profile completion:</span> 90%</h3>
+                            <div class="progress">
+                                <div class="progress-bar">
+                                
+                                </div>
+                            </div>
+                       </div>
+    
+                       <div class="sidenav-menu">
+                     
+                               <li><a href=""><i class="fas fa-search"></i>Search</a></li>
+                               <li><a href="messages.html"><i class="fas fa-envelope"></i>Messages</a></li>
+                               <li><a href=""><i class="fas fa-heart"></i>Matches</a></li>
+                               <li><a href=""><i class="fas fa-user"></i>Profile</a></li>
+                        
+                       </div>
+    
+                       <div class="logo">
+                           <img src="./assets/images/logo.png" class="img-fluid" alt="">
+                       </div>
+    
+                       <div class="setting-logout">
+                           <a href="">Setting</a>
+                           <a href="">Logout</a>
+                       </div>
+    
+                       <div class="sidenav-menu-bottom">
+                          <a href="">safety</a>
+                          <a href="">reports</a>
+                          <a href="">terms</a>
+                          <a href="">privacy</a>
+                       </div>
+                    
+                    </div>
+                  </div>
+
+                  <div class="sidenav-menu">
+                    <li>
+                      <a href=""><i class="fas fa-search"></i>Search</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-envelope"></i>Messages</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i>Matches</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-user"></i>Profile</a>
+                    </li>
+                  </div>
+
+                  <div class="logo">
+                    <img
+                      src="./assets/images/logo.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="setting-logout">
+                    <a href="">Setting</a>
+                    <a href="">Logout</a>
+                  </div>
+
+                  <div class="sidenav-menu-bottom">
+                    <a href="">safety</a>
+                    <a href="">reports</a>
+                    <a href="">terms</a>
+                    <a href="">privacy</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="mkd-container">
+      <div class="login-form my-5">
+        <form>
+          <div class="form-group mb-4">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="form-control login-input"
+              id="email"
+            />
+          </div>
+          <div class="form-group mb-4">
+            <input
+              type="password"
+              placeholder="Password"
+              class="form-control login-input"
+              id="password"
+            />
+          </div>
+
+          <div class="row margin-escape">
+            <input type="button" class="login-btn" value="Login" />
+          </div>
+        </form>
+      </div>
+      <div class="login-page-info">
+        <p class="text-center">
+          Don't have an Account?
+          <a href="signup.html" class="signup-login">Signup here</a>
+        </p>
+        <p class="text-center">
+          <a href="" class="forgot">Forgot your Password?</a>
+        </p>
+        <p class="text-center text-primary">
+          By clicking sign up you agree to our terms and privacy policy
+        </p>
+      </div>
+
+      <div class="login-img-logo">
+        <img src="./assets/images/logo.png" alt="Igbankwu.com" />
+      </div>
+
+      <!-- Carousel -->
+      <div class="carousel">
+        <ul class="carousel__list">
+          <li class="carousel__item" data-pos="-2">1</li>
+          <li class="carousel__item" data-pos="-1">2</li>
+          <li class="carousel__item" data-pos="0">3</li>
+          <li class="carousel__item" data-pos="1">4</li>
+          <li class="carousel__item" data-pos="2">5</li>
+        </ul>
+      </div>
+    </main>
+
+    <section id="footer-power">
+      <div class="footer-igb text-center">
+        <p>Powered by Omenana-Igbo</p>
+      </div>
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+     <!-- suneditor js -->
+     <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+<!-- languages (Basic Language: English/en) -->
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ko.js"></script>
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

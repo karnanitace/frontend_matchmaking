@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- suneditor css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Profile</title>
+  </head>
+  <body>
+    <header>
+      <nav class="mkd-navbar">
+        <ul class="mkd-navbar-nav">
+          <div
+            class="toggleBar"
+            role="button"
+            data-toggle="modal"
+            data-target="#sideModal"
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <li>
+            <a href="" class="nav-link"><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <a href="" class="nav-link nav-icon-top"
+              ><i class="far fa-comments"></i
+              ><i class="fas fa-circle status-dot"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="nav-link nav-icon-top"
+              ><i class="far fa-heart"></i
+              ><i class="fas fa-circle status-dot"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="nav-link"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- sidenav popup -->
+
+    <!-- Modal -->
+    <div
+      class="modal sideModal fade"
+      id="sideModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <section id="sidenav">
+              <div class="sidenav-content">
+                <div class="row margin-escape">
+                  <span
+                    class="left-side cross"
+                    role="button"
+                    data-dismiss="modal"
+                    >&times;</span
+                  >
+                </div>
+                <div class="row margin-escape mb-2">
+                  <div class="user-area d-flex justify-content-between">
+                    <div class="user-profile d-flex align-items-center">
+                      <a href=""><i class="far fa-user-circle"></i></a>
+                      <div class="user-info">
+                        <p>Uji Menakaya</p>
+                        <small>Logos, Nigeria</small>
+                      </div>
+                    </div>
+                    <a href="" class="edit-btn"><i class="fas fa-edit"></i></a>
+                  </div>
+                </div>
+                <div class="sidenav-content-wrapper">
+                  <a href="" class="view-prof-btn">View Profile</a>
+                  <div class="profile-com">
+                    <h3 class="complete-perc">
+                      <span> Profile completion:</span> 90%
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="sidenav-menu">
+                    <li>
+                      <a href=""><i class="fas fa-search"></i>Search</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-envelope"></i>Messages</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i>Matches</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-user"></i>Profile</a>
+                    </li>
+                  </div>
+
+                  <div class="logo">
+                    <img
+                      src="./assets/images/logo.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="setting-logout">
+                    <a href="">Setting</a>
+                    <a href="">Logout</a>
+                  </div>
+
+                  <div class="sidenav-menu-bottom">
+                    <a href="">safety</a>
+                    <a href="">reports</a>
+                    <a href="">terms</a>
+                    <a href="">privacy</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sidenav popup -->
+
+    <!-- Modal -->
+    <div
+      class="modal sideModal fade"
+      id="sideModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <section id="sidenav">
+              <div class="sidenav-content">
+                <div class="row margin-escape">
+                  <span
+                    class="left-side cross"
+                    role="button"
+                    data-dismiss="modal"
+                    >&times;</span
+                  >
+                </div>
+                <div class="row margin-escape mb-2">
+                  <div class="user-area d-flex justify-content-between">
+                    <div class="user-profile d-flex align-items-center">
+                      <a href=""><i class="far fa-user-circle"></i></a>
+                      <div class="user-info">
+                        <p>Uji Menakaya</p>
+                        <small>Logos, Nigeria</small>
+                      </div>
+                    </div>
+                    <a href="" class="edit-btn"><i class="fas fa-edit"></i></a>
+                  </div>
+                </div>
+                <div class="sidenav-content-wrapper">
+                  <a href="" class="view-prof-btn">View Profile</a>
+                  <div class="profile-com">
+                    <h3 class="complete-perc">
+                      <span> Profile completion:</span> 90%
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="sidenav-menu">
+                    <li>
+                      <a href=""><i class="fas fa-search"></i>Search</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-envelope"></i>Messages</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-heart"></i>Matches</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fas fa-user"></i>Profile</a>
+                    </li>
+                  </div>
+
+                  <div class="logo">
+                    <img
+                      src="./assets/images/logo.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="setting-logout">
+                    <a href="">Setting</a>
+                    <a href="">Logout</a>
+                  </div>
+
+                  <div class="sidenav-menu-bottom">
+                    <a href="">safety</a>
+                    <a href="">reports</a>
+                    <a href="">terms</a>
+                    <a href="">privacy</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="profile-edit-container">
+      <div class="edit-btn-row">
+        <a href="" class="edit-profile-btn">Edit</a>
+      </div>
+
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active photos-profile-tab"
+          id="pills-photos"
+          role="tabpanel"
+          aria-labelledby="pills-photos-tab"
+        >
+          <h3 class="profile-tab-head">Profile <i class="fas fa-user"></i></h3>
+          <div class="profile-tab-user-info view-profile-tab-user-info">
+            <div class="profilr-tab-user-img"></div>
+            <div class="view-profile-tab-user py-2 px-3">
+              <p class="profile-name">Jennifer Cron</p>
+              <p>Age: <span> 28 </span></p>
+              <p>Birth Day: <span> Oct, 19th </span></p>
+              <p>Horoscope: <span class="hors"> Libra </span></p>
+              <p>
+                <i class="fas fa-circle fa-online"></i
+                ><span class="ms-1">Online in United States</span>
+              </p>
+              <p class="gender">Female</p>
+            </div>
+          </div>
+
+          <h3 class="profile-tab-head">Photos <i class="far fa-images"></i></h3>
+          <div class="profile-tab-photos">
+            <div class="prev-img">
+              <a href="" class="prev-img-btn"
+                ><i class="fas fa-angle-double-left"></i
+              ></a>
+            </div>
+            <div class="profile-photos"></div>
+            <div class="profile-photos"></div>
+            <div class="profile-photos"></div>
+            <div class="next-img">
+              <span class="remain-img">+6</span>
+              <a href="" class="next-img-btn" type="button" role="button" data-toggle="modal" data-target="#galleryModal"
+                ><i class="fas fa-angle-double-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- gallery modal -->
+          <div class="modal gallery-modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLable" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="gallery-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="photo-gallery-pop">
+                    <div class="row margin-escape">
+                      <div class="col-4 photo-1">
+                        <a href="/assets/images/IgboBride.PNG" data-lightbox="photos">
+                          <img src="/assets/images/IgboBride.PNG" alt="">
+                        </a>
+                      </div>
+                      <div class="col-4 photo-1">
+                        <a href="/assets/images/Igbo Bride2.jpg" data-lightbox="photos">
+                          <img src="/assets/images/Igbo Bride2.jpg" alt="">
+                        </a>
+                        
+                      </div>
+                      <div class="col-4 photo-1">
+                        <a href="/assets/images/IgboBride3.PNG" data-lightbox="photos">
+                          <img src="/assets/images/IgboBride3.PNG" alt="">
+                        </a>
+                      </div>
+                      <div class="col-4 photo-1">
+                        <a href="/assets/images/Igbo Bride4.jpg" data-lightbox="photos">
+                          <img src="/assets/images/Igbo Bride4.jpg" alt="">
+                        </a>
+                        
+                      </div>
+                      <div class="col-4 photo-1">
+                        <a href="/assets/images/Igbo Bride4.jpg" data-lightbox="photos">
+                          <img src="/assets/images/IgboBride5.PNG" alt="">
+                        </a>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-2"
+          id="pills-about"
+          role="tabpanel"
+          aria-labelledby="pills-about-tab"
+        >
+          <h3 class="profile-tab-head">About <span>me</span></h3>
+
+          <div class="input-msg-area mb-4">
+            <p class="view-profile-about">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              iure doloremque optio ullam similique et ipsam, alias eligendi
+              officia doloribus consequuntur amet distinctio est impedit!
+              Voluptatum officia corporis perferendis sit.
+            </p>
+          </div>
+
+          <h3 class="profile-tab-head">
+            Wants <i class="fas fa-hand-holding-heart"></i>
+          </h3>
+
+          <p class="looking-for">Looking for...</p>
+          <div class="wants-input mb-3">
+            <p class="view-profile-about">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum in
+              aspernatur repellat unde fugit, pariatur neque amet labore quos
+              assumenda animi! Temporibus similique consequatur amet beatae
+              minus asperiores quidem itaque!
+            </p>
+          </div>
+
+          <h3 class="profile-tab-head">
+            Physical <i class="fas fa-universal-access"></i>
+          </h3>
+
+          <div class="about-physical-section mb-3">
+            <div class="row margin-escape mb-3">
+              <div class="col-4 physical-select view-physical-select">
+                <label for="skintone">SKIN TONE</label>
+                <p>Chocolate</p>
+              </div>
+              <div class="col-4 physical-select view-physical-select">
+                <label for="height">Height</label>
+                <p>5' 10'</p>
+              </div>
+              <div class="col-4 physical-select view-physical-select">
+                <label for="genotype">Genotype</label>
+                <p>AA</p>
+              </div>
+            </div>
+            <div class="row margin-escape mb-3">
+              <div class="col-4 physical-select view-physical-select">
+                <label for="drinking">Drinking</label>
+                <p>Occasional</p>
+              </div>
+              <div class="col-4 physical-select view-physical-select">
+                <label for="smoking">Smoking</label>
+                <p>No</p>
+              </div>
+              <div class="col-4 physical-select view-physical-select">
+                <label for="ethinicity">Ethinicity</label>
+                <p>Black</p>
+              </div>
+            </div>
+            <div class="row margin-escape">
+              <div class="col-4 physical-select view-physical-select">
+                <label for="bodytype">Body Type</label>
+                <p>Slim</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="profile-tab-head">
+            Life Style <i class="far fa-user-circle"></i>
+          </h3>
+
+          <div class="about-lifestyle-section mb-3">
+            <div class="row margin-escape mb-3">
+              <div class="col-4 physical-select view-physical-select">
+                <label for="education">Education</label>
+                <p>Medicine</p>
+              </div>
+              <div class="col-4 physical-select view-physical-select">
+                <label for="occupation">occupation</label>
+                <p>Doctor</p>
+              </div>
+
+              <div class="col-4 physical-select view-physical-select">
+                <label for="children">children</label>
+                <p>2</p>
+              </div>
+            </div>
+            <div class="row margin-escape mb-3">
+              <div class="col-6 lifestyle-select-section">
+                <div class="lifestyle-select view-lifestyle-select">
+                  <label for="maritalStatus">Marital Status</label>
+                  <p>Divorced</p>
+                </div>
+
+                <div class="lifestyle-select view-lifestyle-select">
+                  <label for="religion">Religion</label>
+                  <p>Christian</p>
+                </div>
+
+                <div class="lifestyle-select view-lifestyle-select">
+                  <label for="stateoforigin">state of origin</label>
+                  <p>Anambra</p>
+                </div>
+              </div>
+              <div class="col-6 lifestyle-worldview">
+                <p>World view</p>
+                <div class="world-view-check">
+                  <div class="world-check">
+                    <label for="modernist">Modernist</label>
+                  </div>
+                  <div class="world-check">
+                    <label for="feminist">Feminist</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-tab-footer">
+            <p>Powered by Omenana Igbo</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <!-- scripts -->
+
+   
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- lightbox js -->
+    <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- suneditor js -->
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+    <!-- languages (Basic Language: English/en) -->
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ko.js"></script>
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
