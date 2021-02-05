@@ -107,3 +107,10 @@ if(document.getElementById('sample2') ) {
 
 
 
+// Datepicker
+
+$('.datepicker').datepicker({
+  format: 'M/d',
+  autoclose: true,
+  
+  });
