@@ -2,6 +2,8 @@ const searchBtn = document.querySelector(".search-btn");
 const searchBar = document.querySelector(".search-loc");
 const searchBox = document.querySelector(".search-bar");
 const optionIcon = document.querySelectorAll(".option-icon");
+const openFilterBtn = document.querySelectorAll(".open-cat .fa-plus");
+const openFilterCatBtn = document.querySelectorAll(".select-cat .fa-times");
 
 
 
@@ -106,11 +108,61 @@ if(document.getElementById('sample2') ) {
 }
 
 
+if(openFilterBtn){
+  openFilterBtn.forEach(filterBtn => {
+    filterBtn.onclick = () => {
+      const openCat = filterBtn.parentElement;
+      const selectCat = openCat.parentElement.querySelector(".select-cat");
+      selectCat.classList.toggle("show-select-cat");
+      openCat.classList.toggle("d-none");
+    }
+  })
+}
+
+
+if(openFilterCatBtn){
+  openFilterCatBtn.forEach(filterBtn => {
+    filterBtn.onclick = () => {
+      const selectCat = filterBtn.parentElement;
+      const openCat = selectCat.parentElement.querySelector(".open-cat");
+      selectCat.classList.toggle("show-select-cat");
+      openCat.classList.toggle("d-none");
+    }
+  })
+}
+
+
+var range = document.querySelector(".range-value");
+var range1 = document.querySelector("#range1");
+var range2 = document.querySelector("#range2")
+
+if( range1 ) {
+  range.innerHTML = `${range1.value} - ${range2.value}`
+
+range1.onchange = () => {
+  range.innerHTML = `${range1.value} - ${range2.value}`
+}
+
+range2.onchange = () => {
+  range.innerHTML = `${range1.value} - ${range2.value}`
+}
+}
+
+
+
+
+
+
 
 // Datepicker
 
-$('.datepicker').datepicker({
-  format: 'M/d',
-  autoclose: true,
-  
+var datepicker = document.querySelector(".datepicker");
+
+if(datepicker) {
+  $('.datepicker').datepicker({
+    format: 'M/d',
+    autoclose: true,
+    
   });
+}
+

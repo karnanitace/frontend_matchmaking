@@ -25,6 +25,9 @@
       rel="stylesheet"
     />
 
+    <!-- jQuery ui css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>Search Feed</title>
   </head>
@@ -46,118 +49,77 @@
         </nav>
     </header>
 
-    <!-- sidenav popup -->
+     <!-- sidenav popup -->
+   
 
-    <!-- Modal -->
-    <div
-      class="modal sideModal fade"
-      id="sideModal"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <section id="sidenav">
+
+        <!-- Modal -->
+<div class="modal sideModal fade" id="sideModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+          <section id="sidenav">
               <div class="sidenav-content">
-                <div class="row margin-escape">
-                  <span
-                    class="left-side cross"
-                    role="button"
-                    data-dismiss="modal"
-                    >&times;</span
-                  >
-                </div>
-                <div class="row margin-escape mb-2">
-                  <div class="user-area d-flex justify-content-between">
-                    <div class="user-profile d-flex align-items-center">
-                      <a href=""><i class="far fa-user-circle"></i></a>
-                      <div class="user-info">
-                        <p>Uji Menakaya</p>
-                        <small>Logos, Nigeria</small>
+                  <div class="row margin-escape">
+                      <span class="left-side cross" role="button" data-dismiss="modal">&times;</span>
+                  </div>
+                  <div class="row margin-escape mb-2">
+                      <div class="user-area d-flex justify-content-between">
+                          <div class="user-profile d-flex align-items-center">
+                              <a href=""><i class="far fa-user-circle"></i></a>
+                              <div class="user-info">
+                                  <p>Uji Menakaya</p>
+                                  <small>Logos, Nigeria</small>
+                              </div>
+                          </div>
+                          <a href="" class="edit-btn"><i class="fas fa-edit"></i></a>
                       </div>
-                    </div>
-                    <div class="sidenav-content-wrapper">
-                      <a href="" class="view-prof-btn">View Profile</a>
-                      <div class="profile-com">
-                            <h3 class="complete-perc"><span> Profile completion:</span> 90%</h3>
-                            <div class="progress">
-                                <div class="progress-bar">
-                                
-                                </div>
-                            </div>
-                       </div>
-    
-                       <div class="sidenav-menu">
-                     
-                        <li><a href="searchfeed.html"><i class="fas fa-search"></i>Search</a></li>
-                        <li><a href="messages.html"><i class="fas fa-envelope"></i>Messages</a></li>
-                        <li><a href=""><i class="fas fa-heart"></i>Matches</a></li>
-                        <li><a href="view_profile.html"><i class="fas fa-user"></i>Profile</a></li>
-                        
-                       </div>
-    
-                       <div class="logo">
-                           <img src="./assets/images/logo.png" class="img-fluid" alt="">
-                       </div>
-    
-                       <div class="setting-logout">
-                           <a href="">Setting</a>
-                           <a href="">Logout</a>
-                       </div>
-    
-                       <div class="sidenav-menu-bottom">
-                          <a href="">safety</a>
-                          <a href="">reports</a>
-                          <a href="">terms</a>
-                          <a href="">privacy</a>
-                       </div>
-                    
-                    </div>
+                      
                   </div>
-
-                  <div class="sidenav-menu">
-                    <li>
-                      <a href=""><i class="fas fa-search"></i>Search</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-envelope"></i>Messages</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-heart"></i>Matches</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fas fa-user"></i>Profile</a>
-                    </li>
+                  <div class="sidenav-content-wrapper">
+                    <a href="" class="view-prof-btn">View Profile</a>
+                    <div class="profile-com">
+                          <h3 class="complete-perc"><span> Profile completion:</span> 90%</h3>
+                          <div class="progress">
+                              <div class="progress-bar">
+                              
+                              </div>
+                          </div>
+                     </div>
+  
+                     <div class="sidenav-menu">
+                   
+                      <li><a href="searchfeed.html"><i class="fas fa-search"></i>Search</a></li>
+                      <li><a href="messages.html"><i class="fas fa-envelope"></i>Messages</a></li>
+                      <li><a href=""><i class="fas fa-heart"></i>Matches</a></li>
+                      <li><a href="view_profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                      
+                     </div>
+  
+                     <div class="logo">
+                         <img src="./assets/images/logo.png" class="img-fluid" alt="">
+                     </div>
+  
+                     <div class="setting-logout">
+                         <a href="">Setting</a>
+                         <a href="">Logout</a>
+                     </div>
+  
+                     <div class="sidenav-menu-bottom">
+                        <a href="">safety</a>
+                        <a href="">reports</a>
+                        <a href="">terms</a>
+                        <a href="">privacy</a>
+                     </div>
+                  
                   </div>
-
-                  <div class="logo">
-                    <img
-                      src="./assets/images/logo.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-
-                  <div class="setting-logout">
-                    <a href="">Setting</a>
-                    <a href="">Logout</a>
-                  </div>
-
-                  <div class="sidenav-menu-bottom">
-                    <a href="">safety</a>
-                    <a href="">reports</a>
-                    <a href="">terms</a>
-                    <a href="">privacy</a>
-                  </div>
-                </div>
+                  
               </div>
-            </section>
-          </div>
-        </div>
+          </section>
       </div>
     </div>
+  </div>
+</div>
 
     <div class="mkd-message-container p-2">
         <div class="mkd-row search-bar">
@@ -173,7 +135,8 @@
       </div>
       <div class="message-search mb-3">
         <div class="searchfeed-profile-img">
-          <span>Img</span>
+          
+          <span class="new-online-status">New</span>
         </div>
         <div class="searchfeed-profile-info">
           <div class="name-row d-flex justify-content-between">
@@ -199,7 +162,8 @@
       </div>
       <div class="message-search mb-3">
         <div class="searchfeed-profile-img">
-          <span>Img</span>
+          
+          <span class="new-online-status online-status">online</span>
         </div>
         <div class="searchfeed-profile-info">
           <div class="name-row d-flex justify-content-between">
@@ -225,7 +189,8 @@
       </div>
       <div class="message-search mb-3">
         <div class="searchfeed-profile-img">
-          <span>Img</span>
+         
+          <span class="new-online-status">New</span>
         </div>
         <div class="searchfeed-profile-info">
           <div class="name-row d-flex justify-content-between">
@@ -251,7 +216,7 @@
       </div>
       <div class="message-search mb-3">
         <div class="searchfeed-profile-img">
-          <span>Img</span>
+          <span class="new-online-status">New</span>
         </div>
         <div class="searchfeed-profile-info">
           <div class="name-row d-flex justify-content-between">
@@ -339,8 +304,12 @@
                 </div>
               </div>
               <div class="input-msg-area">
-                <textarea id="sample" cols="30" rows="3"></textarea>
-              </div>
+                <div class="msg-editor">
+                    <textarea id="sample" cols="30" rows="3"></textarea>
+                </div>
+                
+                <button class="msg-send-btn"><i class="far fa-paper-plane"></i></button>
+            </div>
             </div>
           </div>
         </div>
@@ -366,72 +335,251 @@
                 </div>
                 <div class="filter-body">
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Location</span>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Location</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="location" id="location">
+                          <option>Location</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
+                        
                         
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Age Range</span>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Age Range</span>
+                      </div>
+                      <div class="select-cat age-range-div">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <p>Age Range:<span class="range-value">
+                        </span></p>
+                        
+                        <div class="slider">
+                          <input type="range" name="range1" min="0" max="20" value="15" id="range1">
+                           <input type="range" name="range2" min="21" max="50" value="21" id="range2">
+                        </div>
+                      </div>
+                     </div> 
+                    <div>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Horoscope</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="horoscope" id="horoscope">
+                          <option>Horoscope</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                         
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Horoscope</span>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Skin Tone</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="skintone" id="skintone">
+                          <option>Skin Tone</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                         
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Skin Tone</span>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Height</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="height" id="height">
+                          <option>Height</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                         
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Height</span>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Genotype</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="genotype" id="genotype">
+                          <option>Genotype</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                         
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Genotype</span>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Body Type</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="bodytype" id="bodytype">
+                          <option>Body Type</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                         
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Body Type</span>
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Drinks</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="drinks" id="drinks">
+                          <option>Drinks</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                         
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Drinks</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Smokes</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="smokes" id="smokes">
+                          <option>Smokes</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Smokes</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Education</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="education" id="education">
+                          <option>Education</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Education</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Occupation</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="occupation" id="occupation">
+                          <option>Occupation</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Occupation</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Marital Status</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="maritalstatus" id="maritalstatus">
+                          <option>Marital Status</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Marital Status</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Children</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="children" id="children">
+                          <option>Children</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Children</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Religion</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="religion" id="religion">
+                          <option>Religion</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Religion</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">World View</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="worldview" id="worldview">
+                          <option>World View</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">World View</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">State of Origin</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="stateoforigin" id="stateoforigin">
+                          <option>State of Origin</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                     <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">State of Origin</span>
-                        
-                     </div> 
-                    <div>
-                        <i class="fas fa-plus"></i><span class="filter-cat">Ethnicity</span>
-                        
+                      <div class="open-cat">
+                        <i class="fas fa-plus addFilterBtn"></i><span class="filter-cat">Ethiniity</span>
+                      </div>
+                      <div class="select-cat">
+                        <i class="fas fa-times addFilterBtn"></i>
+                        <select name="ethiniity" id="ethiniity">
+                          <option>Ethiniity</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                        </select>
+                      </div>
                      </div> 
                      <div class="filter-bot">
                          
@@ -444,11 +592,16 @@
       </div>
     </div>
 
-    <script
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
